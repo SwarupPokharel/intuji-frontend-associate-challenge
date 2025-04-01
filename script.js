@@ -13,6 +13,18 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    let profileMenu = document.getElementById("dropdown");
+    let menuItem = document.getElementById("dropdown-content");
+
+    profileMenu.addEventListener("click", function (e) {
+        e.stopPropagation();
+        menuItem.classList.toggle('show');
+    });
+
+    document.addEventListener('click', function () {
+        menuItem.classList.remove('show');
+    });
+
     const dateNow = new Date();
     let fullYear = dateNow.getFullYear();
     let day = dateNow.getDate();
@@ -122,7 +134,7 @@ function getChart() {
     });
 }
 
-window.addEventListener('resize', function() {
+window.addEventListener('resize', function () {
     chart.resize();
-  });
+});
 
