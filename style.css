@@ -812,10 +812,9 @@ body {
   grid-template-rows: repeat(4, 1fr);
   gap: 25px;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .main-container .bottom-section .transaction-container .transaction-cards {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr;
   }
 }
 .main-container .bottom-section .transaction-container .transaction-cards .transactions {
@@ -827,8 +826,6 @@ body {
 }
 @media (max-width: 576px) {
   .main-container .bottom-section .transaction-container .transaction-cards .transactions {
-    flex-direction: column;
-    text-align: center;
     gap: 8px;
   }
 }
@@ -840,6 +837,7 @@ body {
   height: 48px;
   border-radius: 50%;
   background-color: #d9d9d9;
+  flex-shrink: 0;
 }
 .main-container .bottom-section .transaction-container .transaction-cards .transactions .image img {
   width: 24px;
@@ -854,7 +852,6 @@ body {
 }
 @media (max-width: 576px) {
   .main-container .bottom-section .transaction-container .transaction-cards .transactions .transaction-details {
-    flex-direction: column;
     width: 100%;
     gap: 5px;
   }
@@ -868,11 +865,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4px;
-}
-@media (max-width: 576px) {
-  .main-container .bottom-section .transaction-container .transaction-cards .transactions .transaction-details .transaction-name {
-    align-items: center;
-  }
 }
 .main-container .bottom-section .transaction-container .transaction-cards .transactions .transaction-details .transaction-name .date {
   color: rgb(102, 112, 133);
