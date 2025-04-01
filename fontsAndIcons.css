@@ -3,8 +3,8 @@
     font-style: normal;
     font-weight: 400;
     src: 
-      url('/assets/fonts/material-symbols-rounded.woff2') format('woff2'),
-      url('/assets/fonts/material-symbols-rounded.woff') format('woff');
+      url('./assets/fonts/material-symbols-rounded.woff2') format('woff2'),
+      url('./assets/fonts/material-symbols-rounded.woff') format('woff');
 }
 
 .material-symbols-rounded {
